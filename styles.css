@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.logo {
+    
+  
+  font-size: 24px; /* Adjust font size as needed */
+}
+
+
+
+.search-bar {
+    display: flex;
+}
+
+.search-bar input {
+    padding: 8px;
+    margin-right: 8px;
+}
+
+.search-bar button {
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  border: none; /* No border */
+  padding: 10px 20px; /* Padding around the text */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Cursor on hover */
+  height: 100%; /* Set button height to 100% of its parent */
+}
+
+/* Hover effect */
+.search-bar button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.submittedDataContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.submissionBox {
+  width: 350px; /* Set a fixed width in pixels */
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  
+  
+  
+  background-color: #fff;
+  border-radius: 8px;
+  
+}
+
+.submissionBox button {
+  background-color: #3498db; /* Set a consistent blue color */
+  color: #fff; /* White text color */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submissionBox button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+@media screen and (max-width: 1200px) {
+  .submissionBox {
+      width: 350px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .submissionBox {
+      width:350px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+      flex-direction: column; /* Change to a column layout for smaller screens */
+      align-items: center; /* Align items to the start of the column */
+  }
+
+  .search-bar {
+      margin-top: 10px; /* Add some top margin to the search bar */
+  }
+}
+
